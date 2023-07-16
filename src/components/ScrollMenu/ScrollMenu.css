@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&display=swap");
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  font-family: "Diphylleia", serif;
+  font-weight: 600;
+  /* margin-top: 80vh; */
+}
+
+.side-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 45vh;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+  border-top-right-radius: 16px;
+  padding: 20px;
+  color: rgb(12, 12, 12);
+}
+
+.menu-item {
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: justify;
+}
+
+.menu-item.active {
+  background-color: #fdf3f3;
+}
+
+.content {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.vertical-bar {
+  width: 2px;
+  position: absolute;
+  left: 25%;
+  height: 45vh;
+  background-color: #181717;
+}
+
+.worktext {
+  position: relative;
+  font-size: 30px;
+  left: 35%;
+}
+.hrline {
+  display: inline-block;
+  position: relative;
+}
+
+.worktext::after {
+  content: "";
+  width: 200px;
+  border: 1px solid black;
+  /* height: 2px; */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+}
+.worktext::before {
+  content: " ";
+  width: 210px;
+  border: 1px solid black;
+  margin-right: 10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  /* transform: translateX(-100%); */
+}
+.worklist {
+  list-style: disc;
+  font-size: small;
+}
+
+.worklist li {
+  padding: 5px 0;
+  margin: 0 15px;
+  text-align: justify;
+}

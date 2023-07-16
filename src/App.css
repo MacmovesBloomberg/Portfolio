@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  /* background: url('./assets/workdpbg.jpg'); */
+  /* background-size:auto; */
+  /* background-position:inherit; */
+  /* overflow: hidden; */
+}
+
+.introheading {
+  /* font-family: 'Playfair', serif; */
+  font-family: "Great Vibes", cursive;
+}
+
+.animated-background {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  background-size: 400% 400%;
+  animation: animate-background 10s infinite ease-in-out;
+  display: flex;
+  height: 40rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 246px;
+  overflow: hidden;
+}
+
+.container .text {
+  position: relative;
+  color: #4070f4;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .text.first-text {
+  color: #fff;
+}
+
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #010718; */
+  border-left: 2px solid #fafbfe;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  20%,
+  60% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  color: #281451;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2em;
+  font-weight: 700;
+  /* Initial text color */
+}
+
+.typing-effect::after {
+  content: "|";
+  /* Cursor character */
+  display: inline-block;
+  animation: cursor-blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #000;
+    /* Initial text color */
+  }
+
+  50% {
+    color: #ff0000;
+    /* Color during typing animation */
+  }
+
+  100% {
+    color: #00ff00;
+    /* Final text color */
+  }
+}
+
+.text-container {
+  display: inline-block;
+  perspective: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.letter {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0.3rem;
+  font-weight: 400;
+  transform-style: preserve-3d;
+  transform-origin: bottom center;
+  animation: rotateY 2s infinite;
+  font-family: "Rye", cursive;
+}
+
+.letter.v {
+  animation-delay: -0.2s;
+  color: thistle;
+  font-size: 3rem;
+}
+
+.letter.i {
+  animation-delay: -0.1s;
+}
+
+.letter.s {
+  animation-delay: 0s;
+}
+
+.letter.h {
+  animation-delay: 0.1s;
+}
+
+.letter.a {
+  animation-delay: 0.2s;
+}
+
+.letter.l {
+  animation-delay: 0.3s;
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.introdpimg {
+  display: flex;
+  position: absolute;
+  /* top: -30vh; */
+  /* left: -10vw; */
+  top: 0;
+  right: 0;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.introdpimg img {
+  width: 32vw;
+  height: 570px;
+}
