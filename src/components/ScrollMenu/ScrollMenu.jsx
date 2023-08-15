@@ -13,7 +13,7 @@ const ScrollMenu = () => {
       case "Pwc":
         return (
           <div>
-            <h3 style={{ color: "wheat", fontSize: "16px" }}>
+            <h3 style={{ color: "black", fontSize: "16px" }}>
               Software Associate
             </h3>
             <p>Nov 2022 - Present</p>
@@ -43,7 +43,7 @@ const ScrollMenu = () => {
       case "Accenture":
         return (
           <div>
-            <h3 style={{ color: "wheat", fontSize: "16px" }}>
+            <h3 style={{ color: "black", fontSize: "16px" }}>
               Software Engineer
             </h3>
             <p>May 2019 - Nov 2021</p>
@@ -75,7 +75,7 @@ const ScrollMenu = () => {
       case "Wipro":
         return (
           <div>
-            <h3 style={{ color: "wheat", fontSize: "16px" }}>
+            <h3 style={{ color: "black", fontSize: "16px" }}>
               React Developer
             </h3>
             <p>Dec 2021 - Nov 2022</p>

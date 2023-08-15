@@ -4,6 +4,9 @@
   display: flex;
   border: 2px solid black;
   border-radius: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  /* background-blend-mode: overlay; */
 }
 
 form {

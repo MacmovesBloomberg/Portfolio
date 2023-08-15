@@ -65,7 +65,8 @@ body {
 }
 
 .container .text.first-text {
-  color: #fff;
+  color: #080808;
+  font-family: "Cinzel Decorative", cursive;
 }
 
 .text.sec-text:before {
@@ -75,7 +76,6 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  /* background-color: #010718; */
   border-left: 2px solid #fafbfe;
   animation: animate 4s steps(12) infinite;
 }
@@ -211,8 +211,6 @@ body {
 .introdpimg {
   display: flex;
   position: absolute;
-  /* top: -30vh; */
-  /* left: -10vw; */
   top: 0;
   right: 0;
   justify-content: center;
@@ -222,4 +220,34 @@ body {
 .introdpimg img {
   width: 32vw;
   height: 570px;
+}
+
+.title {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bold;
+}
+
+.animation-container {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+}
+
+.ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 255, 174, 0.7);
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-150px);
+  }
 }

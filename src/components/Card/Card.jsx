@@ -5,19 +5,19 @@ const cardsData = [
   {
     id: 1,
     name: "Travel Blog",
-    backgroundImage: 'url("src/assets/trvl.png")',
+    backgroundImage: 'url("src/assets/images/trvl.jpg")',
     websiteLink: "https://roaring-dusk-76b360.netlify.app/",
   },
   {
     id: 2,
     name: "News Feed",
-    backgroundImage: 'url("src/assets/news.png")',
+    backgroundImage: 'url("src/assets/images/news.jpg")',
     websiteLink: "https://criocarouselsite.netlify.app/",
   },
   {
     id: 3,
     name: "E Shopping",
-    backgroundImage: 'url("src/assets/eshop.png")',
+    backgroundImage: 'url("src/assets/images/qtrip.jpg")',
     websiteLink:
       "https://64a1942d13d46c6001548445--courageous-dodol-e8f996.netlify.app/",
   },
@@ -37,9 +37,9 @@ export default function CardComponent() {
           style={{ backgroundImage: card.backgroundImage }}
           onClick={() => handleCardClick(card.websiteLink)}
         >
-          <div className="card-content">
+          {/* <div className="card-content">
             <h3>{card.name}</h3>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>
