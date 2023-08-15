@@ -3,7 +3,7 @@
 .scroll-container {
   display: flex;
   flex-direction: column;
-  /* position: relative; */
+  position: relative;
   font-family: "Diphylleia", serif;
   font-weight: 600;
   /* margin-top: 80vh; */
@@ -48,7 +48,7 @@
 .vertical-bar {
   width: 2px;
   position: absolute;
-  left: 25%;
+  left: 0%;
   height: 45vh;
   background-color: #181717;
 }
@@ -75,7 +75,7 @@
 }
 .worktext::before {
   content: " ";
-  width: 210px;
+  width: 196px;
   border: 1px solid black;
   margin-right: 10px;
   text-align: center;
@@ -87,6 +87,7 @@
 .worklist {
   list-style: disc;
   font-size: small;
+  width: 400px;
 }
 
 .worklist li {
